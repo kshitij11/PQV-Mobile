@@ -1,0 +1,17 @@
+
+Code tested with python-3.9
+
+pip install -r requirements.txt
+
+**Important**
+
+Replace fast_attn with fused_attn in your timm/vision_transformer.py installation in line 70 and 85 (to be removed in future versions of this code):
+site-packages/timm/models/vision_transformer.py
+
+python prune_timm_vit.py ## prunes a timm vit model such as Facebook deit and saves in pruned/ 
+
+python quant.py ## quantizes unpruned/pruned models to x86 backends and calculates latency of running these models
+
+finetune_timm_deit_b_16_taylor_uniform.sh ## can be used to finetune a pruned model. Note it does not affect the latency in quant.py
+
+

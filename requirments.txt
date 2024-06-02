@@ -1,0 +1,4 @@
+torch==2.0.0
+torchvision==0.15.1
+timm==0.8.17.dev0
+torch-pruning
