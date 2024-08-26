@@ -1,4 +1,6 @@
 
+Code for pruning and quantization of ViTs tailored towards mobile applications. More details here: https://arxiv.org/pdf/2408.08437
+
 Code tested with python-3.9
 
 pip install -r requirements.txt
